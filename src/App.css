@@ -1,42 +1,91 @@
-#root {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.App {
   margin: 0 auto;
-  padding: 2rem;
-  max-width: 1280px;
-  text-align: center;
+  padding: 5rem 0;
+  max-width: 70rem;
 }
 
-.logo {
-  transition: filter 300ms;
-  will-change: filter;
-  padding: 1.5em;
-  height: 6em;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  display: flex;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reservation-container {
+  border-right: 0.1rem solid rgba(58, 58, 58, 0.548);
+  width: 20%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.reservation-header {
+  color: rgb(36, 36, 36);
+  font-size: 1.5rem;
 }
 
-.card {
-  padding: 2em;
+.reservation-cards-container {
+  min-height: 35rem;
 }
 
-.read-the-docs {
-  color: #888;
+.reservation-card-container {
+  margin: 1rem 0;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.4rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  width: 80%;
+}
+.reservation-input-container {
+  padding: 0.5rem 1rem;
+  width: 80%;
+}
+
+.reservation-input-container input {
+  width: 100%;
+}
+
+.reservation-input-container button {
+  width: 100%;
+}
+
+.customer-food-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.customer-food {
+  display: flex;
+}
+
+.customer-food-container p {
+  margin-right: 1rem;
+  font-weight: 200;
+}
+
+.customer-food-card-container {
+  margin: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  border-radius: 0.4rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  height: 5rem;
+}
+
+.customer-food-input-container {
+  display: flex;
+}
+
+.customer-food-input-container input {
+  width: 5rem;
+}
+
+.customer-foods-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
 }
