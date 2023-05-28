@@ -1,6 +1,6 @@
-# `template-react`
+# React with Redux Toolkit Crash Course (Laith Academy)
 
-Template for React repositories
+https://www.youtube.com/watch?v=jR4fagDcvrc
 
 ## Getting started
 
