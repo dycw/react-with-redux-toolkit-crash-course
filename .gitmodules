@@ -1,0 +1,3 @@
+[submodule "Redux-Toolkit-Crash-Course"]
+	path = Redux-Toolkit-Crash-Course
+	url = https://github.com/harblaith7/Redux-Toolkit-Crash-Course
