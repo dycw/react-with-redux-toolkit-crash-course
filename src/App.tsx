@@ -1,5 +1,6 @@
 import "./App.css";
 import { RootState } from "./app/store";
+import CustomerCard from "./components/CustomerCard";
 import ReservationCard from "./components/ReservationCard";
 import { addReservation } from "./features/reservationSlice";
 import { useState } from "react";
@@ -9,8 +10,9 @@ function App() {
   const dispatch = useDispatch();
   const [reservationNameInput, setReservationNameInput] = useState("");
   const reservations = useSelector(
-    (state: RootState) => state.reservations.value
+    (state: RootState) => state.reservation.value
   );
+  const customers = useSelector((state: RootState) => state.customer.value);
   const handleAddReservation = () => {
     if (!reservationNameInput) return;
     dispatch(addReservation(reservationNameInput));
@@ -37,16 +39,13 @@ function App() {
           </div>
         </div>
         <div className="customer-food-container">
-          <div className="customer-food-card-container">
-            <p>Selena Gomez</p>
-            <div className="customer-foods-container">
-              <div className="customer-food"></div>
-              <div className="customer-food-input-container">
-                <input />
-                <button>Add</button>
-              </div>
-            </div>
-          </div>
+          {customers.map((customer) => (
+            <CustomerCard
+              id={customer.id}
+              name={customer.name}
+              food={customer.food}
+            />
+          ))}
         </div>
       </div>
     </div>
