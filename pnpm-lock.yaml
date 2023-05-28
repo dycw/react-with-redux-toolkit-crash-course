@@ -4,6 +4,9 @@ dependencies:
   "@reduxjs/toolkit":
     specifier: ^1.9.5
     version: 1.9.5(react-redux@8.0.5)(react@18.2.0)
+  "@types/uuid":
+    specifier: ^9.0.1
+    version: 9.0.1
   immer:
     specifier: ^10.0.2
     version: 10.0.2
@@ -19,6 +22,9 @@ dependencies:
   use-immer:
     specifier: ^0.9.0
     version: 0.9.0(immer@10.0.2)(react@18.2.0)
+  uuid:
+    specifier: ^9.0.0
+    version: 9.0.0
 
 devDependencies:
   "@types/react":
@@ -675,6 +681,13 @@ packages:
     resolution:
       {
         integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==,
+      }
+    dev: false
+
+  /@types/uuid@9.0.1:
+    resolution:
+      {
+        integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==,
       }
     dev: false
 
@@ -2296,6 +2309,14 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /uuid@9.0.0:
+    resolution:
+      {
+        integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==,
+      }
+    hasBin: true
     dev: false
 
   /vite@4.3.2:

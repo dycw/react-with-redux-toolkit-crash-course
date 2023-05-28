@@ -8,7 +8,7 @@ const initialState: ReservationState = {
   value: [],
 };
 
-export const reservationsSlice = createSlice({
+export const reservationSlice = createSlice({
   name: "reservations",
   initialState,
   reducers: {
@@ -21,5 +21,5 @@ export const reservationsSlice = createSlice({
   },
 });
 
-export const { addReservation, removeReservation } = reservationsSlice.actions;
-export default reservationsSlice.reducer;
+export const { addReservation, removeReservation } = reservationSlice.actions;
+export default reservationSlice.reducer;
